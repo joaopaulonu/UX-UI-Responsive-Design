@@ -1,0 +1,80 @@
+/* Definições de Cores e Estilos Básicos */
+:root {
+    --background-color: #f0f0f0; /* Branco Sujo / Cinza Claro */
+    --text-color: #333; /* Cinza Escuro */
+    --primary-color: #222; /* Preto Quase Total */
+    --secondary-color: #666; /* Cinza Médio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.intro-section, .projects-section {
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    .header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .footer {
+        position: static;
+    }
+}
